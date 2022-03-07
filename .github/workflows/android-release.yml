@@ -29,3 +29,4 @@ jobs:
       with:
         artifacts: "build/app/outputs/apk/release/*.apk,build/app/outputs/bundle/release/app-release.aab"
         token: ${{ secrets.GH_SECRET }}
+        tag: v1.0.${{ github.run_number }}
