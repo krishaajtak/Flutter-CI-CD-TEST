@@ -1,6 +1,10 @@
-on:
+# on:
+#   push:
+#     branches: [ master ]
+on: 
   push:
-    branches: [ master ]
+    tags:
+    - '*'
 
 name: Test, Build and Release apk
 jobs:
